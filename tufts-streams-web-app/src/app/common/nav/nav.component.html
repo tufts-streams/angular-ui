@@ -1,0 +1,9 @@
+<div class="menu-container">
+  <div class="tn-menu">
+    <ul class="nav flex-column">
+      <li class="nav-item" *ngFor="let menuItem of categories">
+        <a class="nav-link active" [routerLink]="menuItem.routerLink" routerLinkActive="active">{{menuItem.category}} (10)</a>
+      </li>
+    </ul>
+  </div>
+</div>

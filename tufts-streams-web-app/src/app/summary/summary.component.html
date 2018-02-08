@@ -1,0 +1,16 @@
+<div class="summary-wrapper">
+    <section>
+        <div class="activity-container">
+            <div class="m-b-10"><span class="f-w-600">ACTIVITY</span>
+            </div>
+            <div class="row m-0">
+
+            </div>
+        </div>
+    </section>
+    
+    <app-card *ngFor="let item of summaryItems" [cardList]="sFacultyList" [cardTitle]="item.title" [cardLimit]="4">
+         <span class="float-right m-t-5 f-s-12 f-w-600">{{item.subtitle}}</span>
+    </app-card>
+
+</div>

@@ -1,0 +1,17 @@
+<section>
+    <div class="faculty-container container py-3">
+        <div class="row" *ngFor="let faculty of facultyList">
+            <div class="col-md-2">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=100%C3%97100&w=100&h=100">
+            </div>
+            <div class="col-md-10 px-3">
+                <div class="card-block p-10">
+                    <h6>{{faculty.display_name}}</h6>
+                    <div>{{faculty.academic_title_ss[0]}}</div>
+                    <div>{{faculty.office_address_s}}</div>
+                    <div>{{faculty.school_display_ss}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
